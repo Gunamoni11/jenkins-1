@@ -1,0 +1,65 @@
+
+This is for UBUNTU machine:
+
+
+select all traffic in AWS
+
+in git bash 
+>>
+chmod 400 {...... .pem}
+ssh -i {code in the Example}
+  sudo -i
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install jenkins 
+
+>>>>>>>>>>
+sudo apt-get update -y
+sudo apt-get install jenkins
+
+>>>>>>>>>>>>>>>>
+ststemctl status jenkins
+apt-get upgrade -y
+>>>>>>>>>>
+
+>>>>>>>>>>
+"JAVA"
+
+
+sudo apt update
+sudo apt search openjdk
+sudo apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk
+java -version
+
+>>>>>>>>>>>>>>>>>>>>>
+
+<<<<<<<<<<<>>>>>>>>>>>>>>>>>
+apt-get install openjdk-11 -y
+apt-get update -y
+apt-get upgrade -y
+systemctl restart jenkins
+systemctl status jenkins
+
+<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>
+
+WEB :::
+private ip:8080
+
+
+BASH::::
+cat /var/lib/jenkins/secrates/initaladminpassword    
+copy the genrated password past in the jenkin web
+
+install the plugins.
+
+
+
+
+
